@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "fd2af9e2-4fb2-402a-ae85-8032719aa673",
+		"name": "Crud Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/clientes/",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/clientes/busca/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"clientes",
+						"busca",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"nome\": \"zawqeqwe\",\r\n\"senha\": \"sda3\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/clientes/cadastro",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"clientes",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"nome\": \"bismark\",\r\n        \"senha\": \"4020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/clientes/atualizar",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"clientes",
+						"atualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"nome\": \"pablo\",\r\n    \"senha\": \"10/05/1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/clientes/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"clientes",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
